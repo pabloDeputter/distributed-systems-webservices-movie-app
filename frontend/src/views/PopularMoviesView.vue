@@ -14,7 +14,6 @@ const popularMovies = ref([]);
 /** Loading */
 const loading = ref(true);
 
-/** Fetch n popular movies from the API. */
 const getPopular = async (n: number) => {
   const response = await fetchRequest(
     `http://127.0.0.1:5000/api/movie/top-movies/${n}`
